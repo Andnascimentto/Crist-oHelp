@@ -1,12 +1,44 @@
+z/* soft reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url(https://i.pinimg.com/originals/40/56/42/4056421b482a114e7d51a6354ac3cc83.jpg);
+    background-image: url(../img/4056421b482a114e7d51a6354ac3cc83.jpg);
     background-size: auto 100vh;
     font-family: Arial;
     height: 100vh;
+    font-size: 10px;
   }
-  
+
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+header{
+  height: 50vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+} 
+
   .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu ul {
@@ -18,12 +50,17 @@ body {
     list-style: none
   }
   
+  .menu a {
+    display: block;
+    background-color:
+    padding: 10px 20px;
+  }
   a {
     text-decoration: none;
   }
   
   a:hover {
-    clor: teal;
+    color: teal;
     text-decoration: underline;
     color: red;
   }
@@ -33,7 +70,15 @@ body {
     text-align: center;
     }
   
+  .site-title {
+    font-size: 4em;
+  }
   .site-subtitle {
     text-align: center;
     font-style: italic;
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 180px;
   }
